@@ -127,6 +127,7 @@ main {
 }
 .menu__twitter-follow {
   vertical-align: middle;
+  padding-left: 10px;
 }
 .logo {
   background: url('../img/background.svg');
