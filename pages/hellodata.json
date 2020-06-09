@@ -12,6 +12,17 @@
   },
   {
     "expired": false,
+    "title": "SLUDGE LIFE is a first-person / open-world / vandalism-centric stroll through Epic Games",
+    "href": "https://www.epicgames.com/store/en-US/product/sludge-life/home",
+    "ends": 1622186220,
+    "price": "FREE",
+    "priceBefore": "£11.99",
+    "merchantLink": "Epic Games Deals",
+    "image": "https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fsludge-life%2Fhome%2FEGS_SLUDGELIFE_TerriVellmannDoseone_S3-1360x766-1105cf4796e1a06b09df99ad90ad34baa68e03f7.jpg?h=1080&resize=1&w=1920",
+    "description": "SLUDGE LIFE is a first-person / open-world / vandalism-centric stroll through a polluted island full of cranky idiots and a vibe so thick you can taste it. Play as upcoming tagger GHOST set on staking their claim amongst the graffiti elite."
+  },
+  {
+    "expired": false,
     "title": "(STEAM) Geneshift - FREE TO KEEP - 8th June to 10th June",
     "href": "https://store.steampowered.com/app/308600/Geneshift/",
     "ends": 1591812000,
@@ -23,14 +34,14 @@
   },
   {
     "expired": false,
-    "title": "PlayerUnknown's Battlegrounds (Steam PC) Free To Play June 4-8 @ Steam Store",
-    "href": "https://store.steampowered.com/app/578080/PLAYERUNKNOWNS_BATTLEGROUNDS/",
-    "ends": 1591635240,
+    "title": "Google Stadia Pro - 2 Months Free (New/ Existing Expired Subscriptions) @ Google Stadia",
+    "href": "https://stadia.google.com/",
+    "ends": 1597475820,
     "price": "FREE",
     "priceBefore": "£1.49",
-    "merchantLink": "Steam Store Deals",
-    "image": "https://images.hotukdeals.com/threads/thread_large/default/3472931_2.jpg",
-    "description": "In a few days time the game can be enjoyed for free for a few days on the Steam Store. Source MetaScore of 86"
+    "merchantLink": "Google Store Deals",
+    "image": "https://images.hotukdeals.com/threads/thread_large/default/3481691_1.jpg",
+    "description": "Looks like the google Stadia Pro free 2 months offer is still available (after there were reports it  wasn't there for 2 months anymore ). If you haven't taken advantage of it earl…"
   },
   {
     "expired": false,
@@ -45,13 +56,13 @@
   },
   {
     "expired": true,
-    "title": "4 Free Nintendo Worldwide Games [Nintendo Switch] @ Nintendo eShop",
+    "title": "Tunn game - temporarily free @ Google Play",
     "href": "https://www.nintendo.co.uk/Games/Nintendo-Switch/51-Worldwide-Games-1748086.html",
-    "ends": 1591341420,
+    "ends": 1592551020,
     "price": "FREE",
-    "priceBefore": "£4.69",
-    "merchantLink": "Nintendo eShop Deals",
-    "image": "https://images.hotukdeals.com/threads/thread_large/default/3478022_3.jpg",
-    "description": "Now Available to Download and Play. Nintendo has announced 51 Worldwide Games Guest Pass Edition. This free version of Worldwide Games allows players to play four games for free."
+    "priceBefore": "£0.99",
+    "merchantLink": "Google Play Deals",
+    "image": "https://play.google.com/store/apps/details?id=com.RWdesenv.Tunn&hl=en_US",
+    "description": "A lite game to save your data and battery.  Tunn is very simple game, no attributes, no upgrade, offline and easy to play. What it wants to bring you, is only purely tranquillity "
   }
 ]
