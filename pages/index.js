@@ -125,6 +125,7 @@ main {
   display: inline-block;
 }
 .menu__social-icon::before {
+  position: absolute;
   content: "get updates on";
   vertical-align: top;
   line-height: 42px;
@@ -263,8 +264,8 @@ input:-ms-input-placeholder
 }
 .subscribtion__button {
   -webkit-appearance: none;
--moz-appearance: none;
-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 10px;
   box-shadow: 0px 0px 5px 0 #ffd5d5;
   outline: none;
