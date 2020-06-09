@@ -1,15 +1,18 @@
 {
-  "name": "learn-starter",
+  "name": "todayfreegames",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prod": "next export"
   },
   "dependencies": {
     "next": "9.3.5",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-mailchimp-subscribe": "^2.1.0",
+    "react-progressive-loader": "^0.4.1"
   }
 }
