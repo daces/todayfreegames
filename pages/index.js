@@ -262,6 +262,9 @@ input:-ms-input-placeholder
   font-style: italic;
 }
 .subscribtion__button {
+  -webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
   border-radius: 10px;
   box-shadow: 0px 0px 5px 0 #ffd5d5;
   outline: none;
@@ -304,7 +307,7 @@ input:-ms-input-placeholder
 }
 .footer li a{
   color: #676490;
-  font-size:16px
+  font-size:16px;
   text-decoration: underline;
 }
 .pull-left{
