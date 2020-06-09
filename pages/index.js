@@ -382,7 +382,7 @@ input:-ms-input-placeholder
 .footer{
   text-align: center;
   padding-top: 20px;
-  margin: 40px 0 20px 0;
+  margin-top: 40px;
 }
 }
 
