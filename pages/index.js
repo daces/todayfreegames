@@ -28,6 +28,7 @@ export default function Home() {
           <span className="menu__item menu__page-about"><a href="/about">About</a></span>
           <span >
             <a className="menu__social-icon" href="https://twitter.com/todayFreeGames" target="_blank" rel="noreferrer">
+              get updates on
               <img
                 className="menu__twitter-follow"
                 src="/img/twitter.svg"
@@ -124,13 +125,8 @@ main {
   position: relative;
   display: inline-block;
 }
-.menu__social-icon::before {
-  position: absolute;
-  content: "get updates on";
-  vertical-align: top;
-  line-height: 42px;
-  margin-right: 10px;
-  pointer-events: none;
+.menu__twitter-follow {
+  vertical-align: middle;
 }
 .logo {
   background: url('../img/background.svg');
