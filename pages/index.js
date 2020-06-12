@@ -40,8 +40,8 @@ export default function Home() {
         <a href="/">
           <div className="logo">
             <div className="logo__inner">
-              <div className="logo__title">Today<span>FREE</span>games
-              <h3 className="logo__description">A simple website to never miss a free game deal.</h3>
+              <div className="logo__title"><h2 className="logo__title">Today<span>FREE</span>games</h2>
+                <h1 className="logo__description">A simple website to never miss a free game deal.</h1>
               </div>
             </div>
           </div>
@@ -63,7 +63,7 @@ export default function Home() {
                 <div className="pull-right">
                   <div className="item__inner">
                     <p className="item__ends mb-5" key={`ends${index}`}>{timeAgo(item.ends)}</p>
-                    <p className="mb-5"><a className="item__title mb-5" key={`title${index}`} href={item.href}>{item.title}</a></p>
+                    <p className="mb-5"><a className="item__title mb-5" key={`title${index}`} href={item.href}><h3>{item.title}</h3></a></p>
                     <div className="item__info mb-5">
                       <span className="item__price" key={`price${index}`}>{item.price}</span>
                       <span className="item__info_price-before" key={`priceb${index}`}>{item.priceBefore}</span>
@@ -169,6 +169,8 @@ main {
   text-align: center;
   margin: 0;
   background: #f86d70;
+  font-family: monospace;
+  word-spacing: -3px;
 }
 .box {
   font-family: Helvetica Neue,Arial,Lucida Grande,sans-serif;

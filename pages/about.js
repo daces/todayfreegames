@@ -3,34 +3,37 @@ import React from "react"
 const AboutPage = () => (
   <main>
     <div className="menu">
-      <span className="menu__item menu__page-about"><a href="/">Home</a></span>
+      <span className="menu__item menu__page-about"><a href="/about">About</a></span>
       <span >
         <a className="menu__social-icon" href="https://twitter.com/todayFreeGames" target="_blank" rel="noreferrer">
-          <img
+          get updates on
+              <img
             className="menu__twitter-follow"
-            src="./img/twitter.svg"
-            width="40" height="42" alt="Twitter free icon" title="Today free games official twitter account" />
+            src="/img/twitter.svg"
+            width="40" height="42" alt="Today free games official twitter account" title="Today free games official twitter account" />
         </a>
       </span>
     </div>
 
-    <div className="logo">
-      <div className="logo__inner">
-        <a href="/">
-          <div className="logo__title">Today<span>FREE</span>games
-          <h3 className="logo__description">A simple website to never miss a free game deal.</h3>
+    <a href="/">
+      <div className="logo">
+        <div className="logo__inner">
+          <div className="logo__title"><h2 className="logo__title">Today<span>FREE</span>games</h2>
+            <h1 className="logo__description">A simple website to never miss a free game deal.</h1>
           </div>
-        </a>
+        </div>
       </div>
-    </div>
+    </a>
+
 
     <div className="content">
       <h1>A simple list of free game deals today.</h1>
       <p>
         This website is made to be a list of free deals (on any e-retailer, on Steam, Epic Games Store etc.) so that you never miss a game you can get for free.
         Get the deals via the website, sign up for the email list, or any social media. It's free.
-
-        Contact mail: todayfreegames@gmail.com
+      <p>
+          Contact mail: todayfreegames@gmail.com
+        </p>
       </p>
     </div>
 
@@ -120,6 +123,8 @@ main {
   text-align: center;
   margin: 0;
   background: #f86d70;
+  font-family: monospace;
+  word-spacing: -3px;
 }
       @media screen and (max-width: 414px) {
       .logo__title {
