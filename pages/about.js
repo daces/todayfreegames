@@ -30,7 +30,7 @@ const AboutPage = () => (
         This website is made to be a list of free deals (on any e-retailer, on Steam, Epic Games Store etc.) so that you never miss a game you can get for free.
         Get the deals via the website, sign up for the email list, or any social media. It's free.
 
-        Contact mail: mail@gamesfree.today
+        Contact mail: todayfreegames@gmail.com
       </p>
     </div>
 
@@ -44,73 +44,98 @@ const AboutPage = () => (
         </ul>
       </div>
     </footer>
-    <style jsx>{`
-      main {
-      padding: 0 30px;
-      }
-      .menu {
-        text-align: right;
-        padding: 10px;
-      }
-      .menu__item::after {
-        content: "/";
-        padding: 0 10px;
-      }
-      .menu__page-about {
-        line-height: 42px;
-        vertical-align: top;
-      }
-      .menu__social-icon {
-        position: relative;
-        display: inline-block;
-      }
-      .menu__social-icon::before {
-        content: "follow us";
-        vertical-align: top;
-        line-height: 42px;
-        margin-right: 10px;
-        pointer-events: none;
-      }
-      .logo {
-        background: url('../img/background.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        position: relative;
-        text-align: center;
-        color: #3f3d56;
-        width: 100%;
-        margin: 0 auto;
-        height: 300px;
-      }
-      .logo__inner {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 60%;
-      }
+    <style jsx global>{`
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  body {
+  font-family: 'Courier New', Courier, monospace;
+  color: #3f3d56;
+}
+a {
+  text-decoration: none;
+}
+main {
+  padding: 0 30px;
+}
+.menu {
+  text-align: right;
+  padding: 10px;
+}
+.menu__item::after {
+  content: "/";
+  padding: 0 10px;
+}
+.menu__page-about {
+  line-height: 42px;
+  vertical-align: top;
+}
+.menu__social-icon {
+  position: relative;
+  display: inline-block;
+}
+.menu__twitter-follow {
+  vertical-align: middle;
+  padding-left: 10px;
+}
+.logo {
+  background: url('../img/background.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  color: #3f3d56;
+  width: 100%;
+  margin: 0 auto;
+  height: 300px;
+}
+.logo__inner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60%;
+}
+.logo__title {
+  text-transform: uppercase;
+  background: #3f3d56;
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #f1f0ff;
+  padding: 5px;
+}
+.logo__title span {
+  color: #ffffff;
+  margin: 0 5px;
+  padding: 0 5px;
+  background: #6c63ff;
+}
+.logo__description {
+  color: #ffffff;
+  font-size: 12px;
+  padding: 5px;
+  text-align: center;
+  margin: 0;
+  background: #f86d70;
+}
+      @media screen and (max-width: 414px) {
       .logo__title {
-        text-transform: uppercase;
-        background: #3f3d56;
-        display: inline-block;
-        font-size: 3rem;
-        font-weight: bold;
-        color: #f1f0ff;
-        padding: 5px;
-      }
-      .logo__title span {
-        color: #ffffff;
-        margin: 0 5px;
-        padding: 0 5px;
-        background: #6c63ff;
+        font-size: 2rem;
       }
       .logo__description {
-        color: #ffffff;
-        font-size: 12px;
-        padding: 5px;
-        text-align: center;
-        margin: 0;
-        background: #f86d70;
+        font-size: 10px;
+      }
+      .footer li{
+      display: block;
+      }
+      .footer{
+      text-align: center;
+      padding-top: 20px;
+      margin-top: 40px;
+      }
       }
       `}</style>
 
