@@ -1,42 +1,43 @@
 import React from "react"
 
 const AboutPage = () => (
-  <main>
-    <div className="menu">
-      <span className="menu__item menu__page-about"><a href="/about">About</a></span>
-      <span >
-        <a className="menu__social-icon" href="https://twitter.com/todayFreeGames" target="_blank" rel="noreferrer">
-          get updates on
+  <div>
+    <main>
+      <div className="menu">
+        <span className="menu__item menu__page-about"><a href="/about">About</a></span>
+        <span >
+          <a className="menu__social-icon" href="https://twitter.com/todayFreeGames" target="_blank" rel="noreferrer">
+            get updates on
               <img
-            className="menu__twitter-follow"
-            src="/img/twitter.svg"
-            width="40" height="42" alt="Today free games official twitter account" title="Today free games official twitter account" />
-        </a>
-      </span>
-    </div>
+              className="menu__twitter-follow"
+              src="/img/twitter.svg"
+              width="40" height="42" alt="Today free games official twitter account" title="Today free games official twitter account" />
+          </a>
+        </span>
+      </div>
 
-    <a href="/">
-      <div className="logo">
-        <div className="logo__inner">
-          <div className="logo__title"><h2 className="logo__title">Today<span>FREE</span>games</h2>
-            <h1 className="logo__description">A simple website to never miss a free game deal.</h1>
+      <a href="/">
+        <div className="logo">
+          <div className="logo__inner">
+            <div className="logo__title"><h2 className="logo__title">Today<span>FREE</span>games</h2>
+              <h1 className="logo__description">A simple website to never miss a free game deal.</h1>
+            </div>
           </div>
         </div>
-      </div>
-    </a>
+      </a>
 
 
-    <div className="content">
-      <h1>A simple list of free game deals today.</h1>
+      <div className="content">
+        <h1>A simple list of free game deals today.</h1>
+        <p>
+          This website is made to be a list of free deals (on any e-retailer, on Steam, Epic Games Store etc.) so that you never miss a game you can get for free.
+          Get the deals via the website, sign up for the email list, or any social media. It's free.
       <p>
-        This website is made to be a list of free deals (on any e-retailer, on Steam, Epic Games Store etc.) so that you never miss a game you can get for free.
-        Get the deals via the website, sign up for the email list, or any social media. It's free.
-      <p>
-          Contact mail: todayfreegames@gmail.com
+            Contact mail: todayfreegames@gmail.com
         </p>
-      </p>
-    </div>
-
+        </p>
+      </div>
+    </main>
     <footer>
       <div>
         <ul className="footer">
@@ -126,6 +127,27 @@ main {
   font-family: monospace;
   word-spacing: -3px;
 }
+.footer{
+  background: #3f3d56;
+  list-style-type: none;
+  color: #676490;
+  font-size: 12px;
+  border-top: 4px solid #e6e6e6;
+  margin-top: 40px;
+  padding: 20px;
+}
+.footer li{
+  display: inline-block;
+  margin-right: 10px;
+}
+.footer li:first-child {
+  display: block;
+}
+.footer li a{
+  color: #676490;
+  font-size:16px;
+  text-decoration: underline;
+}
       @media screen and (max-width: 414px) {
       .logo__title {
         font-size: 2rem;
@@ -142,8 +164,9 @@ main {
       margin-top: 40px;
       }
       }
+
       `}</style>
 
-  </main>
+  </div>
 )
 export default AboutPage

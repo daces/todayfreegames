@@ -7,9 +7,8 @@ import { Img } from 'react-progressive-loader'
 
 export default function Home() {
   return (
-
     <div className="container">
-      <Head lang="en">
+      <Head>
         <title>Today Free Games | A list of free game deals happening today. </title>
         <link rel="icon" href="favicon.ico" />
         <meta data-n-head="ssr" data-hid="description" name="description" content="All games free today. A simple website to never miss a free game deal." />
