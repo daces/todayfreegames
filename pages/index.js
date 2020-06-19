@@ -7,93 +7,94 @@ import { Img } from 'react-progressive-loader'
 
 export default function Home() {
   return (
-    <div className="container">
-      <Head>
-        <title>Today Free Games | A list of free game deals happening today. </title>
-        <link rel="icon" href="favicon.ico" />
-        <meta data-n-head="ssr" data-hid="description" name="description" content="All games free today. A simple website to never miss a free game deal." />
-        <meta data-n-head="ssr" data-hid="author" name="author" content="Dragan" />
-        <meta data-n-head="ssr" data-hid="og:type" name="og:type" property="og:type" content="website" />
-        <meta data-n-head="ssr" data-hid="og:title" name="og:title" property="og:title" content="Free Games Today" />
-        <meta data-n-head="ssr" data-hid="og:site_name" name="og:site_name" property="og:site_name" content="Free Games Today" />
-        <meta data-n-head="ssr" data-hid="og:description" name="og:description" property="og:description" content="All games free today. A simple website to never miss a free game deal." />
-      </Head>
-      <div>
+    <Html lang="en">
+      <div className="container">
+        <Head lang="en">
+          <title>Today Free Games | A list of free game deals happening today. </title>
+          <link rel="icon" href="favicon.ico" />
+          <meta data-n-head="ssr" data-hid="description" name="description" content="All games free today. A simple website to never miss a free game deal." />
+          <meta data-n-head="ssr" data-hid="author" name="author" content="Dragan" />
+          <meta data-n-head="ssr" data-hid="og:type" name="og:type" property="og:type" content="website" />
+          <meta data-n-head="ssr" data-hid="og:title" name="og:title" property="og:title" content="Free Games Today" />
+          <meta data-n-head="ssr" data-hid="og:site_name" name="og:site_name" property="og:site_name" content="Free Games Today" />
+          <meta data-n-head="ssr" data-hid="og:description" name="og:description" property="og:description" content="All games free today. A simple website to never miss a free game deal." />
+        </Head>
+        <div>
 
 
-      </div>
-      <main>
-        <p></p>
-        <div className="menu">
-          <span className="menu__item menu__page-about"><a href="/about">About</a></span>
-          <span >
-            <a className="menu__social-icon" href="https://twitter.com/todayFreeGames" target="_blank" rel="noreferrer">
-              get updates on
-              <img
-                className="menu__twitter-follow"
-                src="/img/twitter.svg"
-                width="40" height="42" alt="Today free games official twitter account" title="Today free games official twitter account" />
-            </a>
-          </span>
         </div>
+        <main>
+          <p></p>
+          <div className="menu">
+            <span className="menu__item menu__page-about"><a href="/about">About</a></span>
+            <span >
+              <a className="menu__social-icon" href="https://twitter.com/todayFreeGames" target="_blank" rel="noreferrer">
+                get updates on
+              <img
+                  className="menu__twitter-follow"
+                  src="/img/twitter.svg"
+                  width="40" height="42" alt="Today free games official twitter account" title="Today free games official twitter account" />
+              </a>
+            </span>
+          </div>
 
-        <a href="/">
-          <div className="logo">
-            <div className="logo__inner">
-              <div className="logo__title"><h2 className="logo__title">Today<span>FREE</span>games</h2>
-                <h1 className="logo__description">A simple website to never miss a free game deal.</h1>
+          <a href="/">
+            <div className="logo">
+              <div className="logo__inner">
+                <div className="logo__title"><h2 className="logo__title">Today<span>FREE</span>games</h2>
+                  <h1 className="logo__description">A simple website to never miss a free game deal.</h1>
+                </div>
               </div>
             </div>
-          </div>
-        </a>
+          </a>
 
-        <Newsletter />
+          <Newsletter />
 
-        <div className="deals">
-          {JSONdata.map(function (item, index) {
-            return <div key={`box${index}`} className={`box item clear-fix ${timeAgo(item.ends) === "Expired" ? 'item__expired' : ''}`} >
-              <div className="box__inner clear-fix" >
-                <div className="pull-left">
-                  <Img
-                    src={item.image}
-                    alt={item.title}
-                    loadOnScreen
-                  />
-                </div>
-                <div className="pull-right">
-                  <div className="item__inner">
-                    <p className="item__ends mb-5" key={`ends${index}`}>{timeAgo(item.ends)}</p>
-                    <p className="mb-5"><a className="item__title mb-5" key={`title${index}`} href={item.href}><h3>{item.title}</h3></a></p>
-                    <div className="item__info mb-5">
-                      <span className="item__price" key={`price${index}`}>{item.price}</span>
-                      <span className="item__info_price-before" key={`priceb${index}`}>{item.priceBefore}</span>
-                      <span key={`merchantLink${index}`}>{item.merchantLink}</span>
-                    </div>
-                    <div className="item__description mb-5">
-                      <p>{item.description}</p>
+          <div className="deals">
+            {JSONdata.map(function (item, index) {
+              return <div key={`box${index}`} className={`box item clear-fix ${timeAgo(item.ends) === "Expired" ? 'item__expired' : ''}`} >
+                <div className="box__inner clear-fix" >
+                  <div className="pull-left">
+                    <Img
+                      src={item.image}
+                      alt={item.title}
+                      loadOnScreen
+                    />
+                  </div>
+                  <div className="pull-right">
+                    <div className="item__inner">
+                      <p className="item__ends mb-5" key={`ends${index}`}>{timeAgo(item.ends)}</p>
+                      <p className="mb-5"><a className="item__title mb-5" key={`title${index}`} href={item.href}><h3>{item.title}</h3></a></p>
+                      <div className="item__info mb-5">
+                        <span className="item__price" key={`price${index}`}>{item.price}</span>
+                        <span className="item__info_price-before" key={`priceb${index}`}>{item.priceBefore}</span>
+                        <span key={`merchantLink${index}`}>{item.merchantLink}</span>
+                      </div>
+                      <div className="item__description mb-5">
+                        <p>{item.description}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <div className="item__button t-a-r">
+                  <a className="item__link item__link_red border-r10" key={`href${index}`} href={item.href}>
+                    {`${timeAgo(item.ends) === "Expired" ? "EXPIRED" : "Get deal"}`}</a>
+                </div>
               </div>
-              <div className="item__button t-a-r">
-                <a className="item__link item__link_red border-r10" key={`href${index}`} href={item.href}>
-                  {`${timeAgo(item.ends) === "Expired" ? "EXPIRED" : "Get deal"}`}</a>
-              </div>
-            </div>
-          })}
-        </div>
-      </main >
-      <footer>
-        <div>
-          <ul className="footer">
-            <li>Copyright todayfreegames.com © 2020</li>
-            <li><a href="/toc" target="_blank">Terms of Service</a></li>
-            <li><a href="/privacy-policy" target="_blank">Privacy Policy</a></li>
-            <li><a href="/gdpr" target="_blank">GDPRegulation</a></li>
-          </ul>
-        </div>
-      </footer>
-      <style jsx global>{`
+            })}
+          </div>
+        </main >
+        <footer>
+          <div>
+            <ul className="footer">
+              <li>Copyright todayfreegames.com © 2020</li>
+              <li><a href="/toc" target="_blank">Terms of Service</a></li>
+              <li><a href="/privacy-policy" target="_blank">Privacy Policy</a></li>
+              <li><a href="/gdpr" target="_blank">GDPRegulation</a></li>
+            </ul>
+          </div>
+        </footer>
+        <style jsx global>{`
       * {
   margin: 0;
   padding: 0;
@@ -391,7 +392,8 @@ input:-ms-input-placeholder
 
 `}</style>
 
-    </div>
+      </div>
+    </Html>
   )
 }
 
