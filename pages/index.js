@@ -501,7 +501,7 @@ const Newsletter = () => {
 
   return (
     <div className="subscribtion">
-      <h2>Would you like me to keep you in the loop?</h2>
+      <h2>Would you like me to keep you in the free game deals loop?</h2>
       <p>...</p>
       <MailchimpSubscribe
         url={url}
