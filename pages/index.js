@@ -1,11 +1,17 @@
 import Head from 'next/head'
-import React, { createRef } from "react"
+import React, { createRef , useEffect} from "react"
 import MailchimpSubscribe from "react-mailchimp-subscribe"
 import JSONdata from "./hellodata.json"
 import { Img } from 'react-progressive-loader'
 
 
 export default function Home() {
+  
+  const handleScroll = () => {}
+  useEffect(() => {
+      window.addEventListener('scroll', fall);
+    });
+  
   return (
     <div className="container">
       <Head>
@@ -22,8 +28,10 @@ export default function Home() {
 
 
       </div>
-      <main>
-        <p></p>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 652.4 323.43" id="star"><g transform="translate(-616 -378.8)"><path d="M513.31,144.22l4,4,4-4-4-7.431-4,7.431" transform="translate(510.69 271.211)" fill="#fff252"/><path d="M618.91,152.22l4,4,4-4-4-4-4,4" transform="translate(612 378)" fill="#fff252"/><path d="M688.01,251.03l4,4,4-4-4-4-4,4" transform="translate(495.99 384.97)" fill="#fff252"/><path d="M59.5,222.03l-10.6-10.6,10.6-10.61,10.6,10.61-10.6,10.5" transform="translate(1103.1 361.97)" fill="#fff252"/><path d="M180.15,203.18l-1.8-3.845-6.086,2.845,3.86,4.97,4.03-3.97" transform="translate(523.85 272.665)" fill="#fff252"/><path d="M131.22,270.68l1.49,1.51-.08,9.5-1.51,1.49-1.49-1.51.08-9.5,1.51-1.49" transform="translate(612 353.02)" fill="#fff252"/><path d="M126.48,250.37l9.4.07,1.49,1.52-1.51,1.48-9.4-.07-1.49-1.51,1.51-1.49" transform="translate(612 378)" fill="#fff252"/><path d="M239.91,324.23l4-4-4-4-4,4" transform="translate(612 378)" fill="#fff252"/><line x2="4" y2="4" transform="translate(847.91 698.22)" fill="#fff252"/><path d="M220.24,240l10.51,10.68L220.07,261.2l-10.52-10.68,10.69-10.42" transform="translate(658.177 388.405) rotate(-3)" fill="#fff252"/><path d="M440.24,240l10.51,10.68-10.51,18.2-10.69-18.36,10.69-10.42" transform="translate(642.45 424)" fill="#fff252"/><path d="M220.24,0l10.51,10.68L220.07,21.2,209.55,10.52,220.24.1" transform="translate(633.25 378.8)" fill="#fff252"/><path d="M220.24,240l18.51,10.52-12.127,17.156L209.55,250.52l10.69-10.42" transform="translate(441.25 176)" fill="#fff252"/><path d="M239.91,324.23l4-4-4-4-4,4" transform="translate(380.09 203.77)" fill="#fff252"/><path d="M239.91,324.23l1.6-4-1.6-4-1.81,4" transform="translate(510.49 227.77)" fill="#fff252"/><path d="M220.24,240l10.51,10.68L220.07,261.2l-10.52-10.68,10.69-10.42" transform="translate(466.177 301.265) rotate(-3)" fill="#fff252"/><path d="M131.22,270.68l1.49,1.51-.08,9.5-1.51,1.49-1.49-1.51.08-9.5,1.51-1.49" transform="translate(646.63 153.32)" fill="#fff252"/><path d="M126.48,250.37l9.4.07,1.49,1.52-1.51,1.48-9.4-.07-1.49-1.51,1.51-1.49" transform="translate(646.63 178.3)" fill="#fff252"/><path d="M131.22,270.68l1.49,1.51-.08,9.5-1.51,1.49-1.49-1.51.08-9.5,1.51-1.49" transform="translate(742.63 209.32)" fill="#fff252"/><path d="M126.48,250.37l9.4.07,1.49,1.52-1.51,1.48-9.4-.07-1.49-1.51,1.51-1.49" transform="translate(742.63 234.3)" fill="#fff252"/><path d="M220.24,0,228.1,11.313,220.07,21.2,210.644,7.019,220.24.1" transform="translate(763.901 496)" fill="#fff252"/><path d="M440.24,240l10.51,10.68-10.51,18.2-10.69-18.36,10.69-10.42" transform="matrix(-0.998, -0.07, 0.07, -0.998, 1560.91, 733.379)" fill="#fff252"/><path d="M239.91,324.23l4-4-4-4-4,4" transform="translate(828.09 223.77)" fill="#fff252"/><line x2="4" y2="4" transform="translate(1064 543.99)" fill="#fff252"/><path d="M131.22,270.68l1.49,1.51-.08,9.5-1.51,1.49-1.49-1.51.08-9.5,1.51-1.49" transform="translate(1131.03 324.82)" fill="#fff252"/><path d="M126.48,250.37l9.4.07,1.49,1.52-1.51,1.48-9.4-.07-1.49-1.51,1.51-1.49" transform="translate(1131.03 349.8)" fill="#fff252"/><path d="M180.15,203.18l-1.8-3.845-6.086,2.845,3.86,4.97,4.03-3.97" transform="translate(939.85 208.665)" fill="#fff252"/><path d="M239.91,324.23l1.6-4-1.6-4-1.81,4" transform="translate(926.49 163.77)" fill="#fff252"/><path d="M513.428,102.68l.748,1.555-.04,9.784-.758,1.535L512.63,114l.04-9.784.758-1.535" transform="translate(440.37 332.447)" fill="#fff252"/><path d="M131.22,270.68l1.49,1.51-.08,9.5-1.51,1.49-1.49-1.51.08-9.5,1.51-1.49" transform="translate(667.792 484.816) rotate(-47)" fill="#fff252"/><path d="M126.48,250.37l9.4.07,1.49,1.52-1.51,1.48-9.4-.07-1.49-1.51,1.51-1.49" transform="translate(686.061 501.852) rotate(-47)" fill="#fff252"/></g></svg>
+     <main>
+
+    <p></p>
         <div className="menu">
           <span className="menu__item menu__page-about"><a href="/about">About</a></span>
           <span >
@@ -40,7 +48,7 @@ export default function Home() {
         <a href="/">
           <div className="logo">
             <div className="logo__inner">
-              <div className="logo__title"><h2 className="logo__title">Today<span>FREE</span>games</h2>
+              <div className="logo__title"><h2 className="logo__title">Today <span>free</span> games</h2>
                 <h1 className="logo__description">A simple website to never miss a free game deal.</h1>
               </div>
             </div>
@@ -48,22 +56,23 @@ export default function Home() {
         </a>
 
         <Newsletter />
-
         <div className="deals">
           {JSONdata.map(function (item, index) {
             return <div key={`box${index}`} className={`box item clear-fix ${timeAgo(item.ends) === "Expired" ? 'item__expired' : ''}`} >
               <div className="box__inner clear-fix" >
                 <div className="pull-left">
                   <Img
+                    className="item__image"
                     src={item.image}
                     alt={item.title}
+                    aspectRatio={0.4}
                     loadOnScreen
                   />
                 </div>
                 <div className="pull-right">
                   <div className="item__inner">
                     <p className="item__ends mb-5" key={`ends${index}`}>{timeAgo(item.ends)}</p>
-                    <p className="mb-5"><a className="item__title mb-5" key={`title${index}`} href={item.href}><h3>{item.title}</h3></a></p>
+                    <div className="mb-5"><a className="item__title mb-5" key={`title${index}`} href={item.href}><h3>{item.title}</h3></a></div>
                     <div className="item__info mb-5">
                       <span className="item__price" key={`price${index}`}>{item.price}</span>
                       <span className="item__info_price-before" key={`priceb${index}`}>{item.priceBefore}</span>
@@ -74,10 +83,10 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="item__button t-a-r">
+              <div className="item__button t-a-r clear-fix ">
                 <a className="item__link item__link_red border-r10" key={`href${index}`} href={item.href}>
                   {`${timeAgo(item.ends) === "Expired" ? "EXPIRED" : "Get deal"}`}</a>
+              </div>
               </div>
             </div>
           })}
@@ -99,12 +108,52 @@ export default function Home() {
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  box-sizing: border-box;
+}
   body {
+  font-size: 16px;
+  background: linear-gradient(90deg, #F4D35E, #EE964B);
   font-family: 'Courier New', Courier, monospace;
   color: #3f3d56;
 }
 a {
   text-decoration: none;
+  color: #3f3d56;
+  font-size: 1rem;
+}
+h2 {
+  font-size: 1.563rem ;
+}
+h3 {
+  font-size: 1.953rem ;
+  font-family: monospace;
+}
+#star {
+  width: 100%;
+  position: fixed;
+  top: 62px;
+  opacity: 0.8;
+}
+.star {
+  position: absolute;
+  top: 62px;
+  opacity: 0.8;
+}
+.star__left-1 {
+  top: 100%;
+}
+.star__left-2 {
+  top: 150%;
+  right: 0;
+}
+.star__left-3 {
+  top: 200%;
+  left: 3%;
+}
+.star__left-4 {
+  top: 300%;
+  right: 3%
 }
 main {
   padding: 0 30px;
@@ -148,44 +197,62 @@ main {
   top: 60%;
 }
 .logo__title {
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-family: monospace;
   background: #3f3d56;
   display: inline-block;
-  font-size: 3rem;
+  border-radius: 10px;
+  font-size: 3.052rem;
   font-weight: bold;
-  color: #f1f0ff;
+  color: #fff;
   padding: 5px;
 }
 .logo__title span {
-  color: #ffffff;
+  color: #3f3d56;
   margin: 0 5px;
   padding: 0 5px;
-  background: #6c63ff;
+  background: #ffffff;
 }
 .logo__description {
   color: #ffffff;
-  font-size: 12px;
+  font-size: 1rem;
   padding: 5px;
   text-align: center;
   margin: 0;
-  background: #f86d70;
+  background: #F95738;
   font-family: monospace;
   word-spacing: -3px;
 }
 .box {
   font-family: Helvetica Neue,Arial,Lucida Grande,sans-serif;
+  transform: skew(0, 3deg);
   position: relative;
-  box-shadow: 1px 1px 3px 0 #e6e6e6;
+  box-shadow: 4px 2px 7px 0 #F95738;
   background: #fdfdfd;
   padding: 10px;
-  border-radius: 10px;
-  margin: 20px 0;
+  border-radius: 30px;
+  margin: 40px 0;
+}
+.box__inner {
+  padding: 15px;
+  transform: skew(0, -3deg);
 }
 .item__inner {
   padding-left: 10px;
 }
 .item__image {
-  width: 100%;
+  padding: 20px;
+  padding-bottom: 100%;
+}
+.item__image img{
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 1px 1px 5px 0 #c1c1c1;
+  margin: 20px auto ;
+  width: 114px !important;
+  height: 114px !important;
+  left: 0 !important;
+  right: 0 !important;
   height: 100%;
 }
 .item__info span {
@@ -194,17 +261,19 @@ main {
 .item__title {
   font-size: 1.2em;
   font-weight: bold;
-  color: #6c63ff;
+  color: #083D77;
   text-decoration: none;
 }
 .item__ends {
-  color: #a6a6a2;
+  color: #3f3d56;
   text-align: right;
+  margin-right: 20px;
   font-style: italic;
+  font-size: 0.8rem;
 }
 .item__price {
   font-size: 20px;
-  color: #f86d70;
+  color: #F95738;
   font-weight: bold;
 }
 .item__info_price-before {
@@ -217,24 +286,25 @@ main {
   padding: 10px;
 }
 .item__link_red {
-  background:  #f86d70;
+  background:  #F95738;
   box-shadow: 0px 0px 5px 0 #ffd5d5;
   text-decoration: none;
   font-weight: bold;
   color: #fff;
 }
 .item__link:hover {
-  background: #6c63ff;
+  background: #083D77;
+  box-shadow: 0px 0px 5px 0 #083D77;
   color: white;
   transition: 1s;
 }
 .item__expired {
   filter: grayscale(100%);
 }
-.subscribtion {
-  text-align: center;
-  width: 433px;
-  margin: 40px auto;
+.subscribtion form {
+  z-index: 12523623 !important;
+  position: absolute;
+  width: 100%;
 }
 .subscribtion__input  {
   padding: 10px;
@@ -270,7 +340,7 @@ input:-ms-input-placeholder
   outline: none;
   padding: 10px;
   border: none;
-  background: #f86d70;
+  background: #F95738;
   color: #fff;
 }
 .subscribtion__button:hover {
@@ -290,25 +360,26 @@ input:-ms-input-placeholder
   background: #e4463a;
 }
 .footer{
-  background: #3f3d56;
+  background: #083D77;
   list-style-type: none;
-  color: #676490;
-  font-size: 12px;
-  border-top: 4px solid #e6e6e6;
+  color: #fff;
+  font-size: 0.8rem;
+  border-top: 4px solid #F95738;
   margin-top: 40px;
   padding: 20px;
 }
 .footer li{
   display: inline-block;
   margin-right: 10px;
+  margin: 2px;
 }
 .footer li:first-child {
   display: block;
 }
 .footer li a{
-  color: #676490;
-  font-size:16px;
-  text-decoration: underline;
+  color: #fff;
+  padding: 3px;
+  font-size: 0.8rem;
 }
 .pull-left{
   float: left;
@@ -325,7 +396,7 @@ input:-ms-input-placeholder
   border-radius: 10px;
 }
 .mb-5 {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .clear-fix::after,
 .clear-fix::before {
@@ -352,7 +423,6 @@ input:-ms-input-placeholder
     width: 100%;
   }
   .box {
-    font-size: 12px;
     position: relative;
   }
   .item__button {
@@ -378,7 +448,13 @@ input:-ms-input-placeholder
   }
   .item__image {
     width: auto;
+    padding: 20px;
   }
+  .item__image img{
+    margin: 5px auto ;
+  }
+}
+
 .footer li{
   display: block;
 }
@@ -388,7 +464,30 @@ input:-ms-input-placeholder
   margin-top: 40px;
 }
 }
-
+.fall {
+  -webkit-animation: fallingStar 5s ease-in-out forwards;
+  animation: fallingStar 5s ease-in-out forwards;
+}
+.rise {
+  -webkit-animation: riseStar 5s ease-in-out ;
+  animation: riseStar 5s ease-in-out ;
+}
+@keyframes fallingStar {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(10%);
+  }
+}
+@keyframes riseStar {
+  from {
+    transform: translateY(10%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
 `}</style>
 
     </div>
@@ -439,7 +538,8 @@ const Newsletter = () => {
 .subscribtion {
   text-align: center;
   width: 433px;
-  margin: 40px auto;
+  position: relative;
+  margin: 40px auto 90px auto;
 }
 .subscribtion__input  {
   padding: 10px;
@@ -468,15 +568,16 @@ input:-ms-input-placeholder
 }
 .subscribtion__button {
   border-radius: 10px;
-  box-shadow: 0px 0px 5px 0 #ffd5d5;
+  box-shadow: 0px 0px 5px 0 #F95738;
   outline: none;
   padding: 10px;
   border: none;
-  background: #f86d70;
+  background: #F95738;
   color: #fff;
 }
 .subscribtion__button:hover {
-  background: #6c63ff;
+  background: #083D77;
+  box-shadow: 0px 0px 5px 0 #083D77;
   color: white;
   transition: 1s;
 }
@@ -487,12 +588,13 @@ input:-ms-input-placeholder
 }
 @media screen and (max-width: 414px) {
 .subscribtion {
-text-align: center;
-width: 100%;
-margin: 40px auto;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  margin: 40px auto 90px auto;
 }
 .subscribtion__input  {
-width: 50%;
+width: 45%;
 }
 }
 `}</style>
@@ -524,3 +626,25 @@ function timeAgo(pastDate) {
   }
 }
 
+var scroll = true;
+let timerId;
+function fall(e) {
+  console.log( timerId );
+  if( !timerId ){
+    if( scroll = true ){
+      window.requestAnimationFrame(function() {
+        scroll = false;
+        document.querySelector("#star").classList.remove("rise");
+        document.querySelector("#star").classList.add("fall");
+      });
+    }
+    timerId = setTimeout( function(){
+        document.querySelector("#star").classList.remove("fall");
+        document.querySelector("#star").classList.add("rise");
+        setTimeout( function(){
+          scroll = true;
+          timerId = undefined;
+        },5000);
+      },5000);
+    }
+}
