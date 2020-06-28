@@ -80,7 +80,7 @@ export default function Home() {
                     </div>
                     <div className="item__description mb-5">
                       <p className="mb-5">{item.description}</p>
-                      <p className="item__forever mb-5">Keep forever</p>
+                      <h3 className="item__forever mb-5">Keep forever</h3>
                     </div>
                   </div>
                 </div>
