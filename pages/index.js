@@ -193,7 +193,7 @@ main {
 }
 .logo__inner {
   position: absolute;
-  left: 0;
+  left: -15px;
   right: 0;
   top: 72%;
 }
