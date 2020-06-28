@@ -279,6 +279,7 @@ main {
 }
 .item__link {
   padding: 10px;
+  text-shadow: 1px 1px #000;
 }
 .item__link_red {
   background:  #F95738;
@@ -371,14 +372,13 @@ input:-ms-input-placeholder
 .footer li{
   display: inline-block;
   margin-right: 10px;
-  margin: 2px;
+  margin: 20px;
 }
 .footer li:first-child {
   display: block;
 }
 .footer li a{
   color: #fff;
-  padding: 3px;
   font-size: 1em;
 }
 .pull-left{
