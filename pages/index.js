@@ -446,7 +446,6 @@ input:-ms-input-placeholder
   }
   .pull-left {
     text-align: center;
-    margin-top: 20px;
   }
   .item__made-hot {
     position: absolute;
