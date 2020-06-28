@@ -282,7 +282,7 @@ main {
 }
 .item__link_red {
   background:  #F95738;
-  box-shadow: 0px 0px 5px 0 #ffd5d5;
+  box-shadow: 0px 0px 5px 0 #F95738;
   display: inline-block;
   text-decoration: none;
   font-weight: bold;
@@ -363,7 +363,7 @@ input:-ms-input-placeholder
   background: #3f3d56;
   list-style-type: none;
   color: #fff;
-  font-size: 0.8rem;
+  font-size: 1rem;
   border-top: 4px solid #F95738;
   margin-top: 40px;
   padding: 20px;
@@ -379,7 +379,7 @@ input:-ms-input-placeholder
 .footer li a{
   color: #fff;
   padding: 3px;
-  font-size: 0.8rem;
+  font-size: 1em;
 }
 .pull-left{
   float: left;
@@ -558,7 +558,7 @@ const Newsletter = () => {
   margin-right: -10px;
   outline: none;
   width: 50%;
-  color:  #a5a5a5;
+  color:  #3f3d56;
   font-weight: bold;
   font-style: italic;
   vertical-align: middle;
