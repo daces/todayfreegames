@@ -80,13 +80,13 @@ export default function Home() {
                     </div>
                     <div className="item__description mb-5">
                       <p className="mb-5">{item.description}</p>
-                      <h3 className="item__forever mb-5">Keep forever</h3>
+                      <h2 className="item__forever mb-5">Keep forever</h2>
                     </div>
                   </div>
                 </div>
               <div className="item__button t-a-r clear-fix ">
                 <a className="item__link item__link_red border-r10" key={`href${index}`} href={item.href}>
-                  {`${timeAgo(item.ends) === "Expired" ? "EXPIRED" : "Get game"}`}</a>
+                  {`${timeAgo(item.ends) === "Expired" ? "EXPIRED" : "Get free game"}`}</a>
               </div>
               </div>
             </div>
