@@ -413,6 +413,11 @@ input:-ms-input-placeholder
   margin: 0 auto;
 }
 }
+@media screen and (max-width: 768px) {
+.logo__title {
+  font-size: 2.052rem;
+}
+}
 @media screen and (max-width: 414px) {
 
   .logo__title {
@@ -602,6 +607,11 @@ input:-ms-input-placeholder
 }
 .subscribtion__input  {
 width: 45%;
+}
+}
+@media screen and (max-width: 514px) {
+.subscribtion {
+  width: 100%;
 }
 }
 `}</style>
