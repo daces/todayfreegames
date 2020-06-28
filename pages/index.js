@@ -48,8 +48,7 @@ export default function Home() {
         <a href="/">
           <div className="logo">
             <div className="logo__inner">
-              <div className="logo__title"><h2 className="logo__title">Today <span>free</span> games</h2>
-                <h1 className="logo__description">A simple website to never miss a free game deal.</h1>
+              <div className="logo__title"><div className="logo__title">Today<span>free</span>games</div>
               </div>
             </div>
           </div>
@@ -194,10 +193,10 @@ main {
   position: absolute;
   left: 0;
   right: 0;
-  top: 60%;
+  top: 72%;
 }
 .logo__title {
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-family: monospace;
   background: #3f3d56;
   display: inline-block;
@@ -212,16 +211,10 @@ main {
   margin: 0 5px;
   padding: 0 5px;
   background: #ffffff;
+  border-radius: 10px;
 }
 .logo__description {
-  color: #ffffff;
-  font-size: 1rem;
-  padding: 5px;
-  text-align: center;
-  margin: 0;
-  background: #F95738;
-  font-family: monospace;
-  word-spacing: -3px;
+  font-size: 1.563rem;
 }
 .box {
   font-family: Helvetica Neue,Arial,Lucida Grande,sans-serif;
@@ -261,7 +254,7 @@ main {
 .item__title {
   font-size: 1.2em;
   font-weight: bold;
-  color: #083D77;
+  color: #3f3d56;
   text-decoration: none;
 }
 .item__ends {
@@ -360,7 +353,7 @@ input:-ms-input-placeholder
   background: #e4463a;
 }
 .footer{
-  background: #083D77;
+  background: #3f3d56;
   list-style-type: none;
   color: #fff;
   font-size: 0.8rem;
@@ -413,10 +406,10 @@ input:-ms-input-placeholder
 @media screen and (max-width: 414px) {
 
   .logo__title {
-    font-size: 2rem;
+    font-size: 1.953rem;
   }
   .logo__description {
-    font-size: 10px;
+    font-size: 1.25rem ;
   }
   .deals{
     margin: 0;
@@ -501,7 +494,7 @@ const Newsletter = () => {
 
   return (
     <div className="subscribtion">
-      <h2>Would you like me to keep you in the free game deals loop?</h2>
+       <h1 className="logo__description">A simple website to never miss a free game deal</h1>
       <p>...</p>
       <MailchimpSubscribe
         url={url}
@@ -539,7 +532,7 @@ const Newsletter = () => {
   text-align: center;
   width: 433px;
   position: relative;
-  margin: 40px auto 90px auto;
+  margin: 25px auto 90px auto;
 }
 .subscribtion__input  {
   padding: 10px;
@@ -591,7 +584,7 @@ input:-ms-input-placeholder
   text-align: center;
   width: 100%;
   position: relative;
-  margin: 40px auto 90px auto;
+  margin: 25px auto 90px auto;
 }
 .subscribtion__input  {
 width: 45%;
