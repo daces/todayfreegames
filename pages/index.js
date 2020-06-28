@@ -15,6 +15,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Today Free Games | A list of free game deals happening today. </title>
         <link rel="icon" href="favicon.ico" />
         <meta data-n-head="ssr" data-hid="description" name="description" content="All games free today. A simple website to never miss a free game deal." />
@@ -78,13 +79,14 @@ export default function Home() {
                       <span key={`merchantLink${index}`}>{item.merchantLink}</span>
                     </div>
                     <div className="item__description mb-5">
-                      <p>{item.description}</p>
+                      <p className="mb-5">{item.description}</p>
+                      <p className="item__forever mb-5">Keep forever</p>
                     </div>
                   </div>
                 </div>
               <div className="item__button t-a-r clear-fix ">
                 <a className="item__link item__link_red border-r10" key={`href${index}`} href={item.href}>
-                  {`${timeAgo(item.ends) === "Expired" ? "EXPIRED" : "Get deal"}`}</a>
+                  {`${timeAgo(item.ends) === "Expired" ? "EXPIRED" : "Get game"}`}</a>
               </div>
               </div>
             </div>
@@ -281,18 +283,23 @@ main {
 .item__link_red {
   background:  #F95738;
   box-shadow: 0px 0px 5px 0 #ffd5d5;
+  display: inline-block;
   text-decoration: none;
   font-weight: bold;
   color: #fff;
 }
 .item__link:hover {
-  background: #083D77;
-  box-shadow: 0px 0px 5px 0 #083D77;
+  background: #3f3d56;
+  box-shadow: 0px 0px 5px 0 #3f3d56;
   color: white;
   transition: 1s;
 }
 .item__expired {
   filter: grayscale(100%);
+}
+.item__forever {
+  text-align: right;
+  margin-right: 10px;
 }
 .subscribtion form {
   z-index: 12523623 !important;
@@ -385,6 +392,9 @@ input:-ms-input-placeholder
 .t-a-r {
   text-align: right;
 }
+.t-a-c {
+  text-align: center;
+}
 .border-r10 {
   border-radius: 10px;
 }
@@ -406,7 +416,7 @@ input:-ms-input-placeholder
 @media screen and (max-width: 414px) {
 
   .logo__title {
-    font-size: 1.953rem;
+    font-size: 1.563rem;
   }
   .logo__description {
     font-size: 1.25rem ;
@@ -445,6 +455,10 @@ input:-ms-input-placeholder
   }
   .item__image img{
     margin: 5px auto ;
+  }
+  .item__forever {
+    text-align: center;
+    margin-right: 0;
   }
 }
 
@@ -538,7 +552,7 @@ const Newsletter = () => {
   padding: 10px;
   margin-right: -10px;
   outline: none;
-  width: 60%;
+  width: 50%;
   color:  #a5a5a5;
   font-weight: bold;
   font-style: italic;
@@ -569,8 +583,8 @@ input:-ms-input-placeholder
   color: #fff;
 }
 .subscribtion__button:hover {
-  background: #083D77;
-  box-shadow: 0px 0px 5px 0 #083D77;
+  background: #3f3d56;
+  box-shadow: 0px 0px 5px 0 #3f3d56;
   color: white;
   transition: 1s;
 }
@@ -601,21 +615,22 @@ function timeAgo(pastDate) {
   var todayMinutes = Math.round(todaySeconds / 60);
   var todayHours = ((todayMinutes / 60) % 1) * 10 < 5 ? Math.floor(todayMinutes / 60) : Math.ceil(todayMinutes / 60);
   var todayDays = ((todayHours / 24) % 1) * 10 < 5 ? Math.floor(todayHours / 24) : Math.ceil(todayHours / 24);
+  var timelimit = "Lasts";
 
   if (today >= pastDate) {
     return `Expired`;
   }
   if (-todayDays > 1) {
-    return `Ends in ${-todayDays} days`;
+    return `${timelimit} ${-todayDays} days`;
   }
   if (-todayDays === 1) {
-    return `Ends in ${-todayHours} hours`;
+    return `${timelimit} ${-todayHours} hours`;
   }
   if (todayHours < 60 && todayMinutes !== 0) {
-    return `Ends in ${todayMinutes} minutes`;
+    return `${timelimit} ${todayMinutes} minutes`;
   }
   if (todayMinutes < 1) {
-    return `Ends in ${todaySeconds} seconds`;
+    return `${timelimit} ${todaySeconds} seconds`;
   }
 }
 
