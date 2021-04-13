@@ -1,0 +1,179 @@
+[33mcommit c94b95a622a57b05499259888bbf58c6a6745564[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: daces <dace.air@gmail.com>
+Date:   Sun Jun 28 22:17:12 2020 +0100
+
+    more seo
+
+[33mcommit e3b82008697d74f0d455c224c58988426996f05d[m
+Author: daces <dace.air@gmail.com>
+Date:   Sun Jun 28 21:56:58 2020 +0100
+
+    working on seo
+
+[33mcommit 641f1bca5ba893049a86a2009277c35037637681[m
+Author: daces <dace.air@gmail.com>
+Date:   Sun Jun 28 15:39:33 2020 +0100
+
+    update new games
+
+[33mcommit 219e98b27e43a9404dcdcd149146ed4da01ac9a0[m
+Author: daces <dace.air@gmail.com>
+Date:   Sun Jun 28 14:35:18 2020 +0100
+
+    css remove margin top
+
+[33mcommit d5735dec610836ed128b317724ac6db755d54aad[m
+Author: daces <dace.air@gmail.com>
+Date:   Sun Jun 28 14:31:38 2020 +0100
+
+    fix improperly sized links
+
+[33mcommit fbea49d6923dc23b8d0890e56df1caa1e1b698c8[m
+Author: daces <dace.air@gmail.com>
+Date:   Sun Jun 28 14:22:14 2020 +0100
+
+    increase footer font size
+
+[33mcommit d55602304cf20d2ae5d85697458a8f5460bdbc19[m
+Author: daces <dace.air@gmail.com>
+Date:   Sun Jun 28 10:22:27 2020 +0100
+
+    fix a bug in design on mobile devices
+
+[33mcommit e34d0dc4d3fb88ae8773c87b29798c0b0f4dc93b[m
+Author: daces <dace.air@gmail.com>
+Date:   Sun Jun 28 10:11:27 2020 +0100
+
+    Improved SEO?
+
+[33mcommit c748eae7480d6059d791a08d6e9ab2b432832fee[m
+Author: daces <dace.air@gmail.com>
+Date:   Sun Jun 28 09:30:32 2020 +0100
+
+    changed logo , text, footer colors
+
+[33mcommit 242a8dbc16c481dd355e9e0fc13996726d8c45c2[m
+Author: daces <dace.air@gmail.com>
+Date:   Sat Jun 27 17:43:28 2020 +0100
+
+    text update
+
+[33mcommit df61c99446215ce7c6e9ed85682d23e5b01de00b[m
+Author: daces <dace.air@gmail.com>
+Date:   Sat Jun 27 17:37:12 2020 +0100
+
+    redesign
+
+[33mcommit 849d4dab5b04756f000869410aa669c8ad9e9ca3[m
+Author: daces <dace.air@gmail.com>
+Date:   Fri Jun 19 20:24:31 2020 +0100
+
+    add lang=en, missing html tag
+
+[33mcommit 1c718ac619703fdc27da9ac10a57843b19ccefb3[m
+Author: daces <dace.air@gmail.com>
+Date:   Fri Jun 19 10:14:00 2020 +0100
+
+    test
+
+[33mcommit 3b5289fb42297196e16e048b8ac62c4a37a03600[m
+Author: daces <dace.air@gmail.com>
+Date:   Fri Jun 19 09:59:57 2020 +0100
+
+    add missing lang attr, robots.txt
+
+[33mcommit 71c5b5cedf87777526d5dd31aea84df3644e217d[m
+Author: daces <dace.air@gmail.com>
+Date:   Sun Jun 14 09:52:02 2020 +0100
+
+    new entries
+
+[33mcommit d5c1d2cdcffba53647415bead832d15c1921da14[m
+Author: daces <dace.air@gmail.com>
+Date:   Fri Jun 12 21:37:36 2020 +0100
+
+    little SEO optimisation h1,h2,h3 tags
+
+[33mcommit 8593b7da2d6a10710061d9c1975c1c49b18f5278[m
+Author: daces <dace.air@gmail.com>
+Date:   Fri Jun 12 21:21:47 2020 +0100
+
+    adding sitemap.xml into public directory for vercel
+
+[33mcommit 8a7708d4beb7bd22d5526a3097b3ddcab15830fe[m
+Author: daces <dace.air@gmail.com>
+Date:   Fri Jun 12 21:16:41 2020 +0100
+
+    adding a sitemap.xml
+
+[33mcommit 332952e169babac7616b9f27fc41b53fa337be8e[m
+Author: daces <dace.air@gmail.com>
+Date:   Fri Jun 12 21:06:51 2020 +0100
+
+    fix about page missing styles
+
+[33mcommit a808dcf47302fc84f44ef4b39e124c882ced2c50[m
+Author: daces <dace.air@gmail.com>
+Date:   Tue Jun 9 22:01:05 2020 +0100
+
+    new entry
+
+[33mcommit 1b5dbb6b9e8ad3c82c35adc6043a5dabe57612de[m
+Author: daces <dace.air@gmail.com>
+Date:   Tue Jun 9 20:39:04 2020 +0100
+
+    new entry
+
+[33mcommit 0b67247f38a080f34ebe5a225247c02e9a81d2b5[m
+Author: daces <dace.air@gmail.com>
+Date:   Tue Jun 9 20:25:21 2020 +0100
+
+    new entry
+
+[33mcommit bb5e1774c8b9fc977a17d9f70a3f6ff3af7b7187[m
+Author: daces <dace.air@gmail.com>
+Date:   Tue Jun 9 18:29:59 2020 +0100
+
+    fix extra margin-bottom on footer
+
+[33mcommit a7acfb9a7c2b5a4ac841b74bf1f6a66f23319469[m
+Author: daces <dace.air@gmail.com>
+Date:   Tue Jun 9 18:08:08 2020 +0100
+
+    fix iphone ::before bug
+
+[33mcommit f77bbb774b8f8a2bd8126b3d377eb07269da3738[m
+Author: daces <dace.air@gmail.com>
+Date:   Tue Jun 9 17:59:41 2020 +0100
+
+    fix iphone ::before bug
+
+[33mcommit 21b70faa756f91fb2c74bf50da84ca83d03a29dd[m
+Author: daces <dace.air@gmail.com>
+Date:   Tue Jun 9 17:52:32 2020 +0100
+
+    fix iphone button
+
+[33mcommit b746a0be8cb9ec85399ed07b78ce10fec5eaef80[m
+Author: daces <dace.air@gmail.com>
+Date:   Tue Jun 9 16:59:12 2020 +0100
+
+    First commit
+
+[33mcommit ba11696d67798d962824689dc0e23af961117b48[m
+Author: daces <dace.air@gmail.com>
+Date:   Tue Jun 9 16:55:02 2020 +0100
+
+    first commit
+
+[33mcommit 75a0cf38dab2edb82b5925d5e4c508fad8041dc0[m
+Author: daces <dace.air@gmail.com>
+Date:   Tue Jun 9 16:46:47 2020 +0100
+
+    Signed-off-by: daces <dace.air@gmail.com>
+
+[33mcommit 914e764e7b317b128109379edc5edcf1fc93ea01[m
+Author: daces <dace.air@gmail.com>
+Date:   Tue Jun 9 12:02:56 2020 +0100
+
+    Initial commit from Create Next App
