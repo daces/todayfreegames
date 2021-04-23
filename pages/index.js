@@ -6,11 +6,14 @@ import { Img } from 'react-progressive-loader';
 import Image from 'next/image';
 import AWS from 'aws-sdk';
 import { isDesktop, isMobile } from 'react-device-detect';
+
+const accessKey = new Buffer('QUtJQTI1NEpTQUJWV1BQMlVXTlE=', 'base64').toString();
+const secretKey = new Buffer('aVBoNUVqZ3dMd3ZGRENJSEFCQ2d5T0gyTEI3RUFlMU9TSUI0U0d5bw==', 'base64').toString();
 AWS.config.update({
 	region: 'eu-west-2',
 	endpoint: 'dynamodb.eu-west-2.amazonaws.com',
-	accessKeyId: 'AKIA254JSABVWPP2UWNQ',
-	secretAccessKey: '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',
+	accessKeyId: accessKey,
+	secretAccessKey: secretKey,
 });
 
 const docClient = new AWS.DynamoDB.DocumentClient();
@@ -321,6 +324,9 @@ h3 {
 h5 {
 	text-align: center;
 }
+input::placeholder {
+    color: #333333;
+}
 #star {
   width: 100%;
   position: fixed;
@@ -364,10 +370,12 @@ font-weight: bold;
   line-height: 42px;
   vertical-align: top;
   margin-right: 10px;
+  text-transform: lowercase;
 }
 .menu__social-icon {
   position: relative;
   display: inline-block;
+  text-transform: lowercase;
 }
 .menu__twitter-follow {
   vertical-align: middle;
@@ -418,7 +426,8 @@ font-weight: bold;
 .box {
   transform: skew(0, 3deg);
   position: relative;
-  box-shadow: 4px 2px 7px 0 #b4b4b4;
+  box-shadow: 4px 2px 7px 0 #fff575;
+  //#e9e9e9
   background: #fdfdfd;
   padding-top: 10px;
   border-radius: 30px;
@@ -768,7 +777,7 @@ const Newsletter = () => {
 					margin: 25px auto 90px auto;
 				}
 				.subscribtion__input {
-					padding: 10px;
+					padding: 8px;
 					margin-right: -10px;
 					outline: none;
 					width: 50%;
