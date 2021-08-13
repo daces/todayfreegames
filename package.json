@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "aws-sdk": "^2.883.0",
-    "next": "^10.1.3",
+    "next": "^11.1.0",
     "react": "16.13.1",
     "react-device-detect": "^1.17.0",
     "react-dom": "16.13.1",
